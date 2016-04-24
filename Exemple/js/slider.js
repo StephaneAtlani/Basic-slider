@@ -122,7 +122,7 @@ function position(responsiveRatio){
     $('#SA-slider').css({
             height : responsiveWidth/responsiveRatio,
     });
-    
+    console.log(responsiveOffSet);
     if (animation=='slide'){
         $('.SA-slide[data-active="false"]').css({
             left : responsiveWidth + responsiveOffSet.left,
@@ -141,7 +141,6 @@ function position(responsiveRatio){
     if (animation=='fade'){
         $("div[id^='SA-slider-']").css({
             position : 'absolute',
-            left : responsiveOffSet.left,
             width : responsiveWidth,
             height : responsiveHeight,
         });
@@ -212,21 +211,24 @@ function afficheControlPrevNext(){
 function changeSlidePrevNext(nb){   
     var slideId = slideCurent+nb;
      if(slideId > nbSlide){
-         console.log('1');
+         console.log('cas 1');
           affiche(1);
      } else  if(slideId < 1){
-         console.log('2');
+         console.log('cas 2');
           affiche(nbSlide);
      } else {
-         console.log('3');
+         console.log('cas 3');
          slideId= slideId;
          affiche(slideId);
      }
+     console.log('slide'+slideId +' '+ nbSlide);
 }
 
 // Lancement des fonctions
 $( document ).ready(function() {
     
+    // Variables
+    nbSlide = $("div[id^='SA-slider-']").length; // Bug correction
     
     /* 1- INITIALIZATION
     * Initisizing slides and controls
@@ -333,9 +335,7 @@ $( document ).ready(function() {
     * Les slides change automatiquement. la variable interval permet de régler l'espacement
     */
     if(interval != 0){
-        setInterval(function(){ 
-            changeSlidePrevNext(1);
-        }, interval);
+        setInterval(function() { changeSlidePrevNext(1); },interval);
     }
     
 });
