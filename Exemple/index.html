@@ -1,0 +1,58 @@
+<!--
+ * Sample HTML code - copy/paste potion code  ("Start Slider structure"  to "end Slider structure") Change picture and text
+ * Exemple de code HTML - Copier/coller la portion de code  ("Start Slider structure" jusqu'à "end Slider structure") Changer les photos et les textes
+Stéphane ATLANI - www.stephaneatlani.com
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+		<title>Basic Slider : www.stephaneatlani.com</title>
+        <style>
+			BODY {
+				font-family : arial, sans-serif;
+				background : #DCDCDC;
+			}
+		</style>
+    </head>
+    <body>
+        <div id="description">
+            <h1>Basic slider : Responsive and simple</h1>
+            <img src="img/Icone_drapeau-anglais.jpg" alt="Drapeau Anglais"><p>Basic sllider is very simple to use. Just copy/paste code and change picture and text </p>
+            <p>In Javascript file "js/slider.js" you can change width/height, animation style and choise display controler</p>
+            <p>Best regards</p>
+            <br/>
+            <img src="img/Icon_drapeau_francais.gif" alt="Drapeau Français"><p>Basic slider est simple d'utilisation. Il vous suffit de copier/coller le code, de changer les images et les textes</p>
+            <p>Dans le fichier javascript "js/slider.js", vous pouvez changer la largeur et la hauteur, choisir entre deux types d'animation et si vous voulez afficher ou les controller.</p>
+            <p>Amusez-vous bien !</p>
+        </div>
+        
+         
+        <!-- Start Slider structure -->
+        <div id="SA-SliderContent">   
+            <div id="SA-slider">
+                <div id="SA-controlePrev"> < </div> 
+                <div id="SA-slider-1" class="SA-slide" data-image="img/slide-1.jpg" data-active="false" data-legend="Le soleil matinal - Copyright: Stéphane ATLANI">
+                </div>
+                <div id="SA-slider-2" class="SA-slide" data-image="img/slide-2.jpg" data-active="false" data-legend="Les profondeurs de la nuit - Copyright: Stéphane ATLANI">
+                </div>
+                <div id="SA-slider-3" class="SA-slide" data-image="img/slide-3.jpg" data-active="false" data-legend="Une pétale, une vie - Copyright: Stéphane ATLANI">
+                    <div class="SA-texte">
+						<p>You can  directly insert text into slider and designed with CSS</p>
+						<p>Ce slider permet aussi l'écriture sur le slide. L'apparence des textes sont modifiable directement en CSS</p>
+					</div>
+                </div>
+                <div id="SA-controlNext"> > </div>
+            </div>                
+            <div id="SA-controlBar">
+        </div> 
+        <!-- end Slider structure -->
+        
+            
+        </div>
+    </body>
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+        
+</html>

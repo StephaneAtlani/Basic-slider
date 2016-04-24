@@ -1,0 +1,101 @@
+
+#SA-SliderContent, #SA-slider{
+    margin: auto ;
+    width : 90%; 
+}
+
+#SA-controlBar{
+    margin: auto ;
+    width : 90%; 
+    max-width: 600px;
+}
+
+.SA-slide{
+    display: none;
+    overflow: hidden;
+    width : 90%; 
+    height: 250px;
+    background: #FFF;
+    border: 15px solid #FFF;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #666;
+    
+}
+
+.SA-controls{
+    cursor: pointer;
+    margin: 15px;
+}
+
+.SA-left{
+    left : -5000;
+}
+
+.SA-right{
+    right:-1000;
+}
+
+#SA-controlBar{
+    margin-top: 50px;
+}
+
+#SA-controlBarUl{
+    list-style: none;
+    list-style-type:none;
+    text-align: center;
+}
+#SA-controlBarUl li{
+    display: inline-block;
+    border-radius:50%;
+    width:10px;
+    height:10px;
+    margin: 0 5px;
+    border:1px solid #679403; 
+    -webkit-transition: background 500ms ease;
+    -moz-transition: background 500ms ease;
+    -ms-transition: background 500ms ease;
+    -o-transition: background 500ms ease;
+    transition: background 500ms ease;
+}
+
+.SA-controls:hover{
+    background:green;
+}
+
+.SA-controls{
+     background:#bfd70e;
+}
+.SA-controlBarLiActive{
+    background:green;
+}
+
+#SA-controlNext,#SA-controlePrev{
+    color: #333;
+    margin-top : 20%;
+    font-size: 3.5vw;
+    text-shadow: 1px 1px 4px #444;
+    cursor: pointer;
+    display : none;
+}
+#SA-controlePrev{
+    float: left;
+    margin-left: -6%
+}
+#SA-controlNext{
+    float:right; 
+    margin-right: -11%
+}
+
+.SA-legend{
+    color : #EEE;
+    background-color: rgba(20, 20, 20, 0.80);
+    width : 100%;
+    padding: 10px 5px;
+    bottom: -20px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.SA-texte{
+    padding: 5px;
+}
